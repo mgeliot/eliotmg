@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>formularios</h1>
+	<form action="procesa_formulario.php" method="GET">
+		<h2>datos del usuario </h2>
+		<label for="usuario">usuario </label>
+		<input id="usuario" name="usuario" type="text" placeholder="ingresa tu usuario">
+		<label for="passsword">contraseña</label>
+
+		<input id="passsword" placeholder="ingresa tu contraseña" name="contraseña">
+		<h2>Diseña tu pizza</h2>
+		<h3>Tipo de masa</h3>
+		<label for="masa">elige tu tipoo de masa</label>
+		<select name="" id="masa">
+			<option value="cl">clasica </option>
+			<option value="cr">crunchy</option>
+			<option value="li">light</option>
+		</select>
+		<h3>Tamaño</h3>
+		<label for="t_chica"> 
+		<input type="radio" name="Tamaño" id="t_chica">chica
+		</label>
+		<label for="t_mediano">
+		<input type="radio" name="Tamaño" id="t_mediano" checked>Mediana
+		</label>
+		<label for="t_grande">
+		<input type="radio" name="Tamaño" id="t_grande">grande
+		</label>
+
+		<h3>Ingredientes</h3>
+		<label for="i_queso">
+			<input type="checkbox" name="Ingredientes" id="i_queso">queso
+		</label>
+		<label for="i_chile">
+			<input type="checkbox" name="Ingredientes" id="i_chile">chile
+		</label>
+		<label  for="i_piña">
+			<input type="checkbox" name="Ingredientes" id="i_piña">piña
+		</label>
+		<label for="i_tocino">
+			<input type="checkbox" name="Ingredientes" id="i_tocino">tocino
+		</label>
+		<label for="i_pollo">
+			<input type="checkbox" name="Ingredientes" id="i_pollo">pollo
+		</label>
+		
+
+
+		<h3>Extras</h3>
+		<label for="e_queso">
+			<input type="checkbox" name="extras" id="e_queso">refresco
+		</label>
+		<label for="e_papas">
+			<input type="checkbox" name="extras" id="e_papas">papas
+		</label>
+		<label for="e_postre">
+			<input type="checkbox" name="extras" id="e_postre">postre
+		</label>
+	
+
+	<h3>Fecha de Entrega</h3>
+	<input type="date" name="fecha" id="fecha">
+
+	<hr>
+	<input type="submit" value="Enviar">
+	<button type="submit">Enviar</button>
+
+ </form>
+</body>
+</html> 
